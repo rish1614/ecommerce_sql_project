@@ -217,8 +217,6 @@ ecommerce_sql_project/
     ├── analysis_guide.md
     ├── business_findings.md
     ├── execution_plan.md
-    ├── interview_story.md
-    ├── interview_questions.md
     └── dashboard_guide.md
 ```
 
@@ -857,8 +855,6 @@ Detailed documentation is available in [`docs/`](docs/README.md):
 | `analysis_guide.md` | Business questions behind each SQL analysis |
 | `business_findings.md` | Findings, implications, and recommendations |
 | `execution_plan.md` | Reproducible end-to-end workflow |
-| `interview_story.md` | Interview-ready project explanation |
-| `interview_questions.md` | Technical and business interview practice |
 | `dashboard_guide.md` | Dashboard design and KPI guidance |
 
 ---
