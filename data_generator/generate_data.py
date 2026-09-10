@@ -174,6 +174,10 @@ for oid in range(1, N_ORDERS + 1):
         "campaign_id": campaign_id,
     })
 orders = pd.DataFrame(order_rows)
+
+# Keep nullable campaign IDs as integers in the CSV.
+orders["campaign_id"] = orders["campaign_id"].astype("Int64")
+
 orders.to_csv(DATA / "orders.csv", index=False)
 
 # -------------------------
@@ -200,6 +204,7 @@ for row in orders.itertuples(index=False):
         item_id += 1
 order_items = pd.DataFrame(item_rows)
 order_items.to_csv(DATA / "order_items.csv", index=False)
+
 
 # -------------------------
 # Returns: sample from delivered order items only
