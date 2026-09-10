@@ -164,7 +164,7 @@ Python dependencies are listed in [`requirements.txt`](requirements.txt).
 ## 5. Repository Structure
 
 ```text
-ecommerce_sql_project/
+ecommerce-business-analytics/
 │
 ├── README.md
 ├── .gitignore
@@ -710,8 +710,8 @@ See [`docs/dashboard_guide.md`](docs/dashboard_guide.md).
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/rish1614/ecommerce_sql_project.git
-cd ecommerce_sql_project
+git clone https://github.com/rish1614/ecommerce-business-analytics.git
+cd ecommerce-business-analytics
 ```
 
 ### 2. Create and activate the Python environment
