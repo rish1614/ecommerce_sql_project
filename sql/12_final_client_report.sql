@@ -140,8 +140,8 @@ WITH last_order AS (
     GROUP BY customer_id
 )
 SELECT c.customer_id, c.customer_name, c.region, l.last_order_date,
-       CURRENT_DATE - l.last_order_date AS inactive_days
+       DATE '2025-12-31' - l.last_order_date AS inactive_days
 FROM customers c
 JOIN last_order l ON l.customer_id = c.customer_id
-WHERE CURRENT_DATE - l.last_order_date > 90
+WHERE DATE '2025-12-31' - l.last_order_date > 90
 ORDER BY inactive_days DESC;
